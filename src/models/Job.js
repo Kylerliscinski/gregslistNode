@@ -10,4 +10,4 @@ export const JobSchema = new Schema({
   imgUrl: { type: String, required: true, maxLength: 500 },
   description: { type: String, required: true, maxLength: 500 },
   creatorId: { type: Schema.ObjectId, required: true, ref: 'Account' }
-}, { timestamps: true, toJSON: { virtuals: true } })
+}, { timestamps: true })
