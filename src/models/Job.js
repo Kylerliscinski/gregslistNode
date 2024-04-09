@@ -1,7 +1,8 @@
 import { Schema } from "mongoose";
 
 
-export const HouseSchema = new Schema({
+
+export const JobSchema = new Schema({
   bedrooms: { type: Number, required: true, min: 0, max: 30 },
   bathrooms: { type: Number, required: true, min: 0, max: 25 },
   levels: { type: Number, required: true, min: 1, max: 4 },
